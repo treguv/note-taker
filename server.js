@@ -1,6 +1,6 @@
 const express = require("express"); // import express
 const htmlRoutes = require("./routes/htmlRoutes/index"); //import routes for pushing html docs
-
+const apiRoutes = require("./routes/apiRoutes/index");
 const PORT = process.env.PORT || 3001; //set up port for local or heroku
 
 //instantiate server
@@ -15,6 +15,7 @@ app.use(express.json()); //Use puts a functio non our server that our data has t
 //THis is another api path
 app.use(express.static("public")); // allows the requests for css and such from the main file
 app.use("/", htmlRoutes); //Use html routes for requests sent to this address
+app.use("/api", apiRoutes);
 //tell our server to listen on port 3301
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}`);
