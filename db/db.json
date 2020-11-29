@@ -4,6 +4,11 @@
             "title": "Click Me!",
             "text": "This is a unique note!",
             "id": "ae74e646-c435-4b9c-8964-76ac67689493"
+        },
+        {
+            "title": "This should be",
+            "text": "Different text\n",
+            "id": "f2852d9b-a05a-46f8-8a34-c27b1c757500"
         }
     ]
 }
